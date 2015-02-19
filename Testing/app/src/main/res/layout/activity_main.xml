@@ -103,9 +103,11 @@
               android:id="@+id/txtGender"
               android:text="Gender"
               android:layout_below="@+id/tableLayout"
+              android:layout_marginTop="5dp"
               android:textAppearance="?android:textAppearanceMedium"/>
 
           <RadioButton
+              android:checked="true"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:id="@+id/rdbMale"
@@ -125,8 +127,24 @@
               android:layout_toEndOf="@+id/rdbMale"
               android:layout_marginLeft="30dp"/>
 
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/txtPhone"
+              android:text="Tel."
+              android:textAppearance="?android:textAppearanceMedium"
+              android:layout_below="@+id/txtGender"
+              android:layout_marginTop="10dp" />
 
-
+          <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/inputPhone"
+              android:inputType="phone"
+              android:ems="13"
+              android:layout_toRightOf="@+id/txtPhone"
+              android:layout_below="@+id/rdbMale"
+              android:layout_marginLeft="45dp"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -136,6 +154,7 @@
                 android:id="@+id/button"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="500dp" />
+
 
 
 </RelativeLayout>
